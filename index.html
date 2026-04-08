@@ -192,6 +192,35 @@
 			<!-- end Dplus -->
 		</div>
 	</footer>
+
+	<!-- 更新停止提示 Modal -->
+	<div class="modal fade" id="updateNoticeModal" tabindex="-1" role="dialog" aria-labelledby="updateNoticeModalLabel" aria-hidden="true">
+		<div class="modal-dialog" style="margin-top: 15vh;">
+			<div class="modal-content" style="border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+				<div class="modal-header" style="border-bottom: none; padding-bottom: 0px; padding-top: 20px;">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="updateNoticeModalLabel" style="font-weight: bold; color: #333;">公告</h4>
+				</div>
+				<div class="modal-body" style="font-size: 16px; line-height: 1.8; color: #555; padding: 20px 30px;">
+					<p><strong>BKEngine</strong> 已停止更新（后续支持仍然提供，请联系如下网址）</p>
+					<p style="margin-top: 15px;">欢迎使用下一代视觉小说引擎：
+						<a href="https://momoyu.ink" target="_blank" style="color: #337ab7; font-weight: bold; font-size: 18px; text-decoration: none;">
+							末语引擎
+						</a>
+					</p>
+				</div>
+				<div class="modal-footer" style="border-top: none; text-align: center; padding-top: 0; padding-bottom: 25px;">
+					<button type="button" class="btn btn-primary" data-dismiss="modal" style="padding: 8px 30px; border-radius: 4px;">我知道了</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function() {
+			$('#updateNoticeModal').modal('show');
+		});
+	</script>
 </body>
 </html>
 
